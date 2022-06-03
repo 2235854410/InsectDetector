@@ -3,6 +3,7 @@
 
 将目标检测算法部署到Android移动端，实现端侧推理，无网络的情况下也可以使用本app进行林业有害生物检测，并且检测时间控制在了200ms内。
 除了图片检测功能外还包括了有害生物信息介绍、分布地图、识别历史记录等扩展功能。
+
 The object detection algorithm is deployed to the Android mobile terminal to achieve end-side inference, and the app can be used for forestry insect detection without network, and the detection time is controlled within 200ms.
 In addition to the image detection function also includes insect introduction, insect distribution map, image detection history and other extended functions.
 
@@ -27,6 +28,7 @@ $ python insectDetectorServer.py
 ### 2.修改Android代码
 ### 2.modify codes in Android side
 修改java/com/tsw/insectdetector/tool/NetworkUtil.java中的HTTP_SEVER为你自己服务器URL，然后在Android Studio中运行即可🎉。
+
 modify HTTP_SEVER in java/com/tsw/insectdetector/tool/NetworkUtil.java to your own server URL, run this project in Android Studio, and then enjoy it🎉.
 
 ## 注意事项
