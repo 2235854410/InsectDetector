@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InsectDetector</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="off_line_detection">离线模式</string>
+
+    <string name="empty_history_page">暂无历史记录</string>
+</resources>

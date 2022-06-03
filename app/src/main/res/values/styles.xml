@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bottom_navigation_style">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <declare-styleable name="SpreadView">
+        <!--中心圆颜色-->
+        <attr name="spread_center_color" format="color" />
+        <!--中心圆半径-->
+        <attr name="spread_radius" format="integer" />
+        <!--扩散圆颜色-->
+        <attr name="spread_spread_color" format="color" />
+        <!--扩散间距-->
+        <attr name="spread_distance" format="integer" />
+        <!--扩散最大半径-->
+        <attr name="spread_max_radius" format="integer" />
+        <!--扩散延迟间隔-->
+        <attr name="spread_delay_milliseconds" format="integer" />
+    </declare-styleable>
+
+    <style name="mainActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">#ffffff</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 让顶部状态栏变成深色字体 -->
+        <item name="android:statusBarColor">#ffffff</item>、
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="splashActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">#ffffff</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>\
+    </style>
+
+    <style name="CustomDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="PopupAnimation"
+        parent="android:Animation"
+        mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <!-- 分隔线颜色 -->
+        <item name="android:divider">@color/colorMiddleGrey</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+</resources>

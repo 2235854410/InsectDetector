@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/drawable/btn1_selector.xml" value="0.26979166666666665" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/drawable/btn2_selector.xml" value="0.26979166666666665" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/drawable/btn3_selector.xml" value="0.26979166666666665" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/drawable/btn4_selector.xml" value="0.26979166666666665" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/drawable/btn_handbook_selector.xml" value="0.14583333333333334" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/drawable/btn_history_selector.xml" value="0.14583333333333334" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/drawable/main.xml" value="0.26979166666666665" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/drawable/mask_ripple.xml" value="0.14583333333333334" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/activity_main.xml" value="0.24230072463768115" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/activity_splash.xml" value="0.23777173913043478" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/dialog_input.xml" value="0.1802536231884058" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/dialog_reconfirm.xml" value="0.20380434782608695" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/fragment_china_map.xml" value="0.1802536231884058" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/fragment_detection.xml" value="0.24230072463768115" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/fragment_detection_history.xml" value="0.23777173913043478" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/fragment_detection_result.xml" value="0.2" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/fragment_handbook.xml" value="0.24230072463768115" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/fragment_insect_detector.xml" value="0.2" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/fragment_insect_introduction.xml" value="0.2" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/item_detection_history.xml" value="0.1983695652173913" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/item_history.xml" value="0.20380434782608695" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/item_insect_instroduction.xml" value="0.22056159420289856" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/item_spinner_dropdown.xml" value="0.21557971014492755" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/item_spinner_selected.xml" value="0.21557971014492755" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/popupwindow_insect_info.xml" value="0.192481884057971" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/popupwindow_submit_img.xml" value="0.17395833333333333" />
+        <entry key="..\:/mysoftware/InsectDetector/app/src/main/res/layout/popupwindow_transmit_img.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

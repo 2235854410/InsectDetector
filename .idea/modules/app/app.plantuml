@@ -1,0 +1,277 @@
+@startuml
+
+title __INSECTDETECTOR.APP's Class Diagram__\n
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.BuildConfig {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.ChinaMapFragment {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.ChinaMapView {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.DBReadTask {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.DatabaseHelper {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.DetectionHandler {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.DetectionHistoryAdapter {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.DetectionHistoryFragment {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.DetectionResultData {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.DetectionResultFragment {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.GetStringTask {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    interface com.tsw.insectdetector.IDataFetchListener {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    interface com.tsw.insectdetector.IDetectionListener {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    interface com.tsw.insectdetector.IFetchIntroductionListener {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    interface com.tsw.insectdetector.IOnReceiveImageListener {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    interface com.tsw.insectdetector.IPageStateListener {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.ImageDownloadTask {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.ImageUploadTask {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.InputDialog {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.InsectDetectorFragment {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.InsectIntroductionAdapter {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.InsectIntroductionData {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.InsectIntroductionFragment {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.MainActivity {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.MediaHandler {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.NetworkUtil {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.ReconfirmDialog {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.SVGPathToAndroidPath {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.SaveTask {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.ScreenUtil {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.SlideSwitch {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.SplashActivity {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.SpreadView {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.ThreadPoolUtil {
+    }
+  }
+  
+
+  namespace com.tsw.insectdetector {
+    class com.tsw.insectdetector.YoloV5Ncnn {
+    }
+  }
+  
+
+  com.tsw.insectdetector.ChinaMapFragment -up-|> androidx.fragment.app.Fragment
+  com.tsw.insectdetector.ChinaMapView .up.|> android.view.View.OnTouchListener
+  com.tsw.insectdetector.ChinaMapView -up-|> android.view.View
+  com.tsw.insectdetector.ChinaMapView o-- com.tsw.insectdetector.ChinaMapView.OnProvinceSelectedListener : xOnProvinceSelectedListener
+  com.tsw.insectdetector.DBReadTask .up.|> java.lang.Runnable
+  com.tsw.insectdetector.DBReadTask o-- com.tsw.insectdetector.IDataFetchListener : dataFetchListener
+  com.tsw.insectdetector.DatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.tsw.insectdetector.DetectionHandler o-- com.tsw.insectdetector.IDetectionListener : detectionListener
+  com.tsw.insectdetector.DetectionHandler o-- com.tsw.insectdetector.DetectionResultData : resultData
+  com.tsw.insectdetector.DetectionHandler o-- com.tsw.insectdetector.ThreadPoolUtil : threadPoolUtil
+  com.tsw.insectdetector.DetectionHandler o-- com.tsw.insectdetector.YoloV5Ncnn : yolov5ncnn
+  com.tsw.insectdetector.DetectionHistoryAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.tsw.insectdetector.DetectionHistoryFragment .up.|> com.tsw.insectdetector.IDataFetchListener
+  com.tsw.insectdetector.DetectionHistoryFragment .up.|> com.tsw.insectdetector.IPageStateListener
+  com.tsw.insectdetector.DetectionHistoryFragment -up-|> androidx.fragment.app.Fragment
+  com.tsw.insectdetector.DetectionHistoryFragment o-- com.tsw.insectdetector.DetectionHistoryAdapter : historyAdapter
+  com.tsw.insectdetector.DetectionHistoryFragment o-- com.tsw.insectdetector.ReconfirmDialog : reconfirmDialog
+  com.tsw.insectdetector.DetectionResultFragment -up-|> androidx.fragment.app.Fragment
+  com.tsw.insectdetector.GetStringTask .up.|> java.lang.Runnable
+  com.tsw.insectdetector.GetStringTask o-- com.tsw.insectdetector.GetStringTask.IGetStringListener : iGetStringListener
+  com.tsw.insectdetector.ImageDownloadTask .up.|> java.lang.Runnable
+  com.tsw.insectdetector.ImageDownloadTask o-- com.tsw.insectdetector.ImageDownloadTask.IDownloadListener : downloadListener
+  com.tsw.insectdetector.ImageUploadTask .up.|> java.lang.Runnable
+  com.tsw.insectdetector.ImageUploadTask o-- com.tsw.insectdetector.ImageUploadTask.IUploadListener : uploadListener
+  com.tsw.insectdetector.InputDialog .up.|> android.view.View.OnClickListener
+  com.tsw.insectdetector.InputDialog -up-|> android.app.AlertDialog
+  com.tsw.insectdetector.InputDialog o-- com.tsw.insectdetector.InputDialog.InputCallback : callBack
+  com.tsw.insectdetector.InsectDetectorFragment .up.|> com.tsw.insectdetector.IDetectionListener
+  com.tsw.insectdetector.InsectDetectorFragment .up.|> com.tsw.insectdetector.IOnReceiveImageListener
+  com.tsw.insectdetector.InsectDetectorFragment -up-|> androidx.fragment.app.Fragment
+  com.tsw.insectdetector.InsectDetectorFragment o-- com.tsw.insectdetector.InputDialog : inputDialog
+  com.tsw.insectdetector.InsectDetectorFragment o-- com.tsw.insectdetector.MediaHandler : mediaHandler
+  com.tsw.insectdetector.InsectDetectorFragment o-- com.tsw.insectdetector.DetectionResultFragment : resultFragment
+  com.tsw.insectdetector.InsectIntroductionAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.tsw.insectdetector.InsectIntroductionFragment -up-|> androidx.fragment.app.Fragment
+  com.tsw.insectdetector.InsectIntroductionFragment o-- com.tsw.insectdetector.ChinaMapFragment : chinaMapFragment
+  com.tsw.insectdetector.InsectIntroductionFragment o-- com.tsw.insectdetector.GetStringTask : getStringTask
+  com.tsw.insectdetector.InsectIntroductionFragment o-- com.tsw.insectdetector.InsectIntroductionAdapter : introductionAdapter
+  com.tsw.insectdetector.InsectIntroductionFragment o-- com.tsw.insectdetector.ThreadPoolUtil : threadPoolUtil
+  com.tsw.insectdetector.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.tsw.insectdetector.MainActivity o-- com.tsw.insectdetector.ChinaMapFragment : chinaMapFragment
+  com.tsw.insectdetector.MainActivity o-- com.tsw.insectdetector.DetectionHistoryFragment : historyFragment
+  com.tsw.insectdetector.MainActivity o-- com.tsw.insectdetector.InsectIntroductionFragment : introductionFragment
+  com.tsw.insectdetector.MainActivity o-- com.tsw.insectdetector.DetectionResultFragment : resultFragment
+  com.tsw.insectdetector.ReconfirmDialog -up-|> android.app.Dialog
+  com.tsw.insectdetector.ReconfirmDialog o-- com.tsw.insectdetector.ReconfirmDialog.onNoOnclickListener : noOnclickListener
+  com.tsw.insectdetector.ReconfirmDialog o-- com.tsw.insectdetector.ReconfirmDialog.onYesOnclickListener : yesOnclickListener
+  com.tsw.insectdetector.SaveTask .up.|> java.lang.Runnable
+  com.tsw.insectdetector.SaveTask o-- com.tsw.insectdetector.DetectionResultData : data
+  com.tsw.insectdetector.SlideSwitch -up-|> android.view.View
+  com.tsw.insectdetector.SlideSwitch o-- com.tsw.insectdetector.SlideSwitch.OnStateChangedListener : onStateChangedListener
+  com.tsw.insectdetector.SplashActivity -up-|> android.app.Activity
+  com.tsw.insectdetector.SpreadView -up-|> android.view.View
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

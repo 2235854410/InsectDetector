@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/state_bar_padding"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/state_bar_padding"
+        app:layout_constraintBottom_toTopOf="@id/line_view"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintVertical_bias="0"/>
+    
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#E4E4E4"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_rg"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/bottom_navigation_rg"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintHeight_percent=".06"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/introduction_rb"
+            style="@style/bottom_navigation_style"
+            android:drawableTop="@drawable/btn_handbook_selector"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detector_rb"
+            style="@style/bottom_navigation_style"
+            android:drawableTop="@drawable/btn_detector_selector"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_rb"
+            style="@style/bottom_navigation_style"
+            android:drawableTop="@drawable/btn_history_selector"/>
+
+
+    </RadioGroup>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

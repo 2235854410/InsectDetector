@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.tsw.insectdetector.view.SlideSwitch
+        android:id="@+id/offline_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.12"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/off_line_detection"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/offline_switch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"/>
+
+
+
+    <com.tsw.insectdetector.view.SpreadView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:spread_center_color="#A2D1E8"
+        app:spread_delay_milliseconds="52"
+        app:spread_distance="5"
+        app:spread_max_radius="100"
+        app:spread_radius="110"
+        app:spread_spread_color="#A2D1E8"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:id="@+id/btn_transmit_to_detector"
+        android:background="@drawable/btn_upload_img"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading_anim"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="PacmanIndicator"
+        app:indicatorColor="@color/colorMiddleGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

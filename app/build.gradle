@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.example.insectdetector"
+        minSdk 24
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            moduleName "ncnn"
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86"
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            version "3.10.2"
+            path file('src/main/jni/CMakeLists.txt')
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        android.applicationVariants.all{
+            variant->variant.outputs.all{
+                outputFileName="insectDetector.apk";
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.wang.avi:library:2.1.3' //加载动画
+    implementation 'com.github.yalantis:ucrop:2.2.6'   //图片裁剪
+    implementation 'com.github.nanchen2251:CompressHelper:1.0.5'  //压缩图片
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0' //查看大图
+}

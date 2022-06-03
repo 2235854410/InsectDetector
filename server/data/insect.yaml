@@ -1,0 +1,11 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /root/Documents/insectdataset/images/train/
+val: /root/Documents/insectdataset/images/val/
+test: /root/Documents/insectdataset/images/test/
+
+# number of classes
+nc: 13
+
+# class names
+names: [ '草履蚧', '麻皮蝽', '日本脊吉丁', '星天牛', '桑天牛', '松墨天牛', '柳蓝叶甲', '黄刺蛾幼虫', '霜天蛾', '杨扇舟蛾',
+         '美国白蛾', '人纹污灯蛾', '丝带凤蝶']

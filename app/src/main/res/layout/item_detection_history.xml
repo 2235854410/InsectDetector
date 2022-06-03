@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="139dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginHorizontal="12dp"
+    android:background="@color/transparent"
+    android:id="@+id/history_rl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这里是查询的时间"
+        android:textColor="@color/grey"
+        android:layout_gravity="center|top"
+        android:id="@+id/history_time"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shadow_mask_ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/history_item">
+
+        <ImageView
+            android:id="@+id/history_img"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="19dp"
+            android:scaleType="centerCrop"
+            />
+
+
+        <TextView
+            android:id="@+id/history_info"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="148dp"
+            android:text="这里是历史"
+            android:textColor="@color/grey"
+            android:maxLines="4"
+            android:ellipsize="end"/>
+    </FrameLayout>
+
+
+</FrameLayout>
