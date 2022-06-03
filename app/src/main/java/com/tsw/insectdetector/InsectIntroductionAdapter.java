@@ -64,7 +64,7 @@ public class InsectIntroductionAdapter extends RecyclerView.Adapter<InsectIntrod
                     .load(BitmapFactory.decodeResource(context.getResources(), R.drawable.empty)).
                     override(260,120).into(holder.introductionImg);
         } else {
-            Glide.with(holder.introductionImg.getContext()).load(NetworkUtil.HTTP_SEVER + data.getImgUrl()).
+            Glide.with(holder.introductionImg.getContext()).load(NetworkUtil.HTTP_SERVER + data.getImgUrl()).
                     override(260,120).into(holder.introductionImg);
         }
         holder.introductionInfo.setText(data.getIntroduction());

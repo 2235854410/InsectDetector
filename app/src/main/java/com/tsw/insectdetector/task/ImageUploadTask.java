@@ -45,7 +45,7 @@ public class ImageUploadTask implements Runnable{
                 .build();
         Request request = new Request
                 .Builder()
-                .url(NetworkUtil.HTTP_SEVER + "getDetect")
+                .url(NetworkUtil.HTTP_SERVER + "getDetect")
                 .post(requestBody)
                 .build();
         try {

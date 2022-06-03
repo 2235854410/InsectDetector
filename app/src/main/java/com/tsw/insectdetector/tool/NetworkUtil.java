@@ -10,7 +10,7 @@ import android.net.Network;
 import android.net.NetworkCapabilities;
 
 public class NetworkUtil {
-    public static final String HTTP_SEVER = "http://localhost:5000/";    // modify it to your own server url
+    public static final String HTTP_SERVER = "http://localhost:5000/";    // modify it to your own server url
 
 
     public static boolean checkNetworkConnectState(Context context) {

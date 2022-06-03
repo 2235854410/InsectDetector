@@ -63,7 +63,7 @@ public class InsectIntroductionFragment extends Fragment {
     };
     private String[] insectFamilyList = AllInsectFamily[0];
     private final ThreadPoolUtil threadPoolUtil = ThreadPoolUtil.getInstance();
-    private final String url = NetworkUtil.HTTP_SEVER + "handbook";
+    private final String url = NetworkUtil.HTTP_SERVER + "handbook";
     private final String name = "family";
     private final Handler uiHandler = new Handler();
     private TextView emptyPage, offlineSignal;

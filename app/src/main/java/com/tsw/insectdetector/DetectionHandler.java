@@ -93,7 +93,7 @@ public class DetectionHandler {
                 JSONObject json = new JSONObject(responseBody.string());
                 String imgName = json.getString("img");
                 String info = json.getString("name");
-                String  imgUrl = NetworkUtil.HTTP_SEVER + "result/" + imgName;
+                String  imgUrl = NetworkUtil.HTTP_SERVER + "result/" + imgName;
                 ImageDownloadTask imageDownloadTask = new ImageDownloadTask(imgUrl, new ImageDownloadTask.IDownloadListener() {
                     @Override
                     public void onSuccessDownload(ResponseBody responseBody) {

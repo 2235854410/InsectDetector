@@ -51,7 +51,7 @@ public class ChinaMapFragment extends Fragment {
             @Override
             public void onProvinceSelected(ChinaMapView.Area pArea) {
                 loadingAnim.show();
-                String url = NetworkUtil.HTTP_SEVER + "city";
+                String url = NetworkUtil.HTTP_SERVER + "city";
                 GetStringTask getStringTask = new GetStringTask(url, "city", pArea.getName()
                         , new GetStringTask.IGetStringListener() {
                     @Override
