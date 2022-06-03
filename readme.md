@@ -38,7 +38,6 @@ modify HTTP_SEVER in java/com/tsw/insectdetector/tool/NetworkUtil.java to your o
 
 ## 效果图
 ## Renderings
-![start](splash.png)
 ![rending](rendering.png)
 
 ## 联系我
