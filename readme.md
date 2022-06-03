@@ -12,8 +12,17 @@ In addition to the image detection function also includes insect introduction, i
 
 ### 1.部署服务器端
 ### 1. deploy server side
-服务器端代码位于server文件夹下
+服务器端代码位于server文件夹下，部署服务器端需要先安装MariaDB（mysql）
 ```bash
+# 安装mariadb
+$ sudo apt-get install python-pip python-dev libmysqlclient-dev
+$ pip install mysql
+$ apt install mariadb-client-core-10.1
+$ apt-get install mariadb-server
+$ sudo systemctl start mariadb
+# 将数据库数据导入到Mariadb中，sql文件位于server文件夹下
+$ mysql -u root -p forest_insect < forest_insect.sql
+
 # 创建一个名为insect的anaconda环境：
 $ conda create --name insect python=3.7.10
 # 激活环境：
@@ -27,9 +36,9 @@ $ python insectDetectorServer.py
 
 ### 2.修改Android代码
 ### 2.modify codes in Android side
-修改java/com/tsw/insectdetector/tool/NetworkUtil.java中的HTTP_SEVER为你自己服务器URL，然后在Android Studio中运行即可🎉。
+修改java/com/tsw/insectdetector/tool/NetworkUtil.java中的HTTP_SERVER为你自己服务器URL，然后在Android Studio中运行即可🎉。
 
-modify HTTP_SEVER in java/com/tsw/insectdetector/tool/NetworkUtil.java to your own server URL, run this project in Android Studio, and then enjoy it🎉.
+modify HTTP_SERVER in java/com/tsw/insectdetector/tool/NetworkUtil.java to your own server URL, run this project in Android Studio, and then enjoy it🎉.
 
 ## 注意事项
 ## Precautions
