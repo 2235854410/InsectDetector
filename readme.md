@@ -36,7 +36,7 @@ $ python insectDetectorServer.py
 
 ### 2.修改Android代码
 ### 2.modify codes in Android side
-修改java/com/tsw/insectdetector/tool/NetworkUtil.java中的HTTP_SEVER为你自己服务器URL，然后在Android Studio中运行即可🎉。
+修改java/com/tsw/insectdetector/tool/NetworkUtil.java中的HTTP_SERVER为你自己服务器URL，然后在Android Studio中运行即可🎉。
 
 modify HTTP_SEVER in java/com/tsw/insectdetector/tool/NetworkUtil.java to your own server URL, run this project in Android Studio, and then enjoy it🎉.
 
