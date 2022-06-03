@@ -12,8 +12,17 @@ In addition to the image detection function also includes insect introduction, i
 
 ### 1.部署服务器端
 ### 1. deploy server side
-服务器端代码位于server文件夹下
+服务器端代码位于server文件夹下，部署服务器端需要先安装MariaDB（mysql）
 ```bash
+# 安装mariadb
+$ sudo apt-get install python-pip python-dev libmysqlclient-dev
+$ pip install mysql
+$ apt install mariadb-client-core-10.1
+$ apt-get install mariadb-server
+$ sudo systemctl start mariadb
+# 将数据库数据导入到Mariadb中，sql文件位于server文件夹下
+$ mysql -u root -p forest_insect < forest_insect.sql
+
 # 创建一个名为insect的anaconda环境：
 $ conda create --name insect python=3.7.10
 # 激活环境：
